@@ -1,4 +1,3 @@
-import { setUncaughtExceptionCaptureCallback } from 'process';
 import React, { useState } from 'react'
 
 export interface Props {
@@ -7,11 +6,12 @@ export interface Props {
 
 
 export const CharBox: React.FC<Props> = (props) => {
-    
+
     const [input, setInput] = useState('')
 
-    const handleInput = (e) => {
-        setUncaughtExceptionCaptureCallback(e.target.value)
+
+    const handleInput = (event: any) => {
+        setInput(event.target.value);
     }
     
     return(
