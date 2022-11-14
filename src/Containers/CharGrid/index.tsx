@@ -6,6 +6,7 @@ export const CharGrid = () => {
     for (var i = 0; i < 7; i++){
         boxes.push(
         <CharBox
+            key={i}
             id={i}
         />)
     }
