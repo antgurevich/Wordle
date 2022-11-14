@@ -6,7 +6,7 @@ export interface Props {
 
 
 export const CharBox: React.FC<Props> = (props) => {
-    
+
     const [input, setInput] = useState('')
 
     const handleInput = (event: React.FormEvent<HTMLInputElement>) => {
