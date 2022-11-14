@@ -1,12 +1,13 @@
 import CharBox from "../../Components/CharBox";
 import "./styles.scss"
+import { v4 } from 'uuid';
 
 export const CharGrid = () => {
     const boxes = [];
     for (var i = 0; i < 7; i++){
         boxes.push(
         <CharBox
-            key={i}
+            key={v4()}
             id={i}
         />)
     }
