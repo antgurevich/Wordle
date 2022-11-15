@@ -7,7 +7,7 @@ export const Header = () => {
         <div className={`${baseClass}`}>
             Wordle
             <div className={`${baseClass}-sub`}>
-                Created by Anton Gurevich
+                Replicated by Anton Gurevich
             </div>
         </div>
     )
