@@ -1,7 +1,18 @@
-.MainPage {
-    display: inline-grid;
-    column-gap: 15px;
-    row-gap: 15px;
-    grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: auto auto auto auto auto auto auto
+html, body { // Clears default margins
+    margin: 0px;
+}
+
+.MainPage{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #202020;
+}
+
+.MainPage-grid{
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
