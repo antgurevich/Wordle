@@ -1,12 +1,17 @@
+import "./styles.scss"
+
+const baseClass = 'SubmitButton'
+
 export const SubmitButton = () => {
     
     const handleClick = () => {
-        
+        // TODO 
     }
     
     return(
-        <div>
-            <button onClick={handleClick}>
+        <div className={`${baseClass}`}>
+            <button className={`${baseClass}-button`} onClick={handleClick}>
+                Enter
             </button>
         </div>
     )
