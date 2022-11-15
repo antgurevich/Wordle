@@ -1,18 +1,20 @@
 import CharBox from "../../Components/CharBox";
 import "./styles.scss"
-import { v4 as uuidv4 } from 'uuid';
+import { v4 } from 'uuid';
+
+const baseClass = 'CharGrid'
 
 export const CharGrid = () => {
     const boxes = [];
-    for (var i = 0; i < 7; i++){
+    for (var i = 0; i < 5; i++){
         boxes.push(
         <CharBox
-            key={uuidv4()}
+            key={v4()}
             id={i}
         />)
     }
     return (
-        <div>
+        <div className={`${baseClass}`}>
             {boxes} 
         </div>
         )
