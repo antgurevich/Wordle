@@ -1,3 +1,4 @@
+import SubmitButton from "../../Components/SubmitButton";
 import CharGrid from "../CharGrid"
 import "./styles.scss"
 
@@ -7,13 +8,16 @@ export const MainPage = () => {
     
     return (
       <div className={`${baseClass}`}>
-        <div className={`${baseClass}-grid`}>
-          <CharGrid />
-          <CharGrid />
-          <CharGrid />
-          <CharGrid />
-          <CharGrid />
-          <CharGrid />
+        <div className={`${baseClass}-content`}>
+          <div className={`${baseClass}-grid`}>
+            <CharGrid />
+            <CharGrid />
+            <CharGrid />
+            <CharGrid />
+            <CharGrid />
+            <CharGrid />
+          </div>
+          <SubmitButton />
         </div>
       </div>
     );
