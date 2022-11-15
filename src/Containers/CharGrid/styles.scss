@@ -1,6 +1,5 @@
-.CharBox {
-    color: white;
-    background-color: black;
-    text-align: center;
-    margin-top: 50px;
+.CharGrid {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
 }
