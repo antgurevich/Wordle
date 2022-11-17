@@ -9,9 +9,7 @@ export const MainPage = () => {
     
     return (
       <div className={`${baseClass}`}>
-        <div className={`${baseClass}-header`}> 
-          <Header/> 
-        </div>
+        <div className={`${baseClass}-header`}>  <Header/> </div>
           <div className={`${baseClass}-content`}>
             <div className={`${baseClass}-grid`}>
               <CharGrid />
