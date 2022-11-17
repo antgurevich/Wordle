@@ -9,10 +9,16 @@ html, body { // Clears default margins
     background-color: #202020;
 }
 
+.MainPage-header{
+    width: 100%;
+    left: 0;
+    height: 100px;
+    position: relative;
+}
+
 .MainPage-content{
-    margin: 0;
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 }

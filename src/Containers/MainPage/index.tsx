@@ -1,3 +1,4 @@
+import Header from "../../Components/Header";
 import SubmitButton from "../../Components/SubmitButton";
 import CharGrid from "../CharGrid"
 import "./styles.scss"
@@ -8,17 +9,18 @@ export const MainPage = () => {
     
     return (
       <div className={`${baseClass}`}>
-        <div className={`${baseClass}-content`}>
-          <div className={`${baseClass}-grid`}>
-            <CharGrid />
-            <CharGrid />
-            <CharGrid />
-            <CharGrid />
-            <CharGrid />
-            <CharGrid />
+        <div className={`${baseClass}-header`}>  <Header/> </div>
+          <div className={`${baseClass}-content`}>
+            <div className={`${baseClass}-grid`}>
+              <CharGrid />
+              <CharGrid />
+              <CharGrid />
+              <CharGrid />
+              <CharGrid />
+              <CharGrid />
+            </div>
+            <SubmitButton />
           </div>
-          <SubmitButton />
-        </div>
       </div>
     );
 }
