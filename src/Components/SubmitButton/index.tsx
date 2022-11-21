@@ -2,10 +2,14 @@ import "./styles.scss"
 
 const baseClass = 'SubmitButton'
 
-export const SubmitButton = () => {
+export interface Props {
+    value?: string;
+}
+
+export const SubmitButton: React.FC<Props> = (props) => {
     
     const handleClick = () => {
-        // TODO 
+        console.log(props.value)
     }
     
     return(
