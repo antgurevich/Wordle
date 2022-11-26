@@ -11,7 +11,7 @@ export const MainPage = () => {
         <div className={`${baseClass}-header`}>
           <Header />
         </div>
-        <div>
+        <div className={`${baseClass}-content`}>
           <Content />
         </div>
       </div>
