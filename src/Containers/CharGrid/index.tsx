@@ -4,7 +4,11 @@ import { v4 } from 'uuid';
 
 const baseClass = 'CharGrid'
 
-export const CharGrid = () => {
+export interface Props {
+    
+}
+
+export const CharGrid: React.FC<Props> = (props) => {
     const boxes = [];
     for (var i = 0; i < 5; i++){
         boxes.push(

@@ -3,6 +3,7 @@ import "./styles.scss"
 
 export interface Props {
     readonly id: number;
+    value?: string;
 }
 
 const baseClass = 'CharBox';
@@ -13,7 +14,12 @@ export const CharBox: React.FC<Props> = (props) => {
 
     const handleInput = (event: React.FormEvent<HTMLInputElement>) => {
         const value = event.currentTarget.value;
-        (/[a-zA-Z]/).test(value) ?  setInput(value) : setInput('');
+        if ((/[a-zA-Z]/).test(value)){
+            setInput(value);
+            // props.value = value;
+        } else{
+            setInput('');
+        }
     }
     
     return(
